@@ -1,11 +1,11 @@
 {
 	"schemaVersion": 1,
-	"id": "examplemod",
+	"id": "wolfblock",
 	"version": "${version}",
-	"name": "Example Mod",
-	"description": "This mod aims to help new BTA modders.",
+	"name": "Wolf Block :3",
+	"description": "This mod aims to add wolf block.",
 	"authors": [
-		"Turnip Labs"
+		"FCAZ"
 	],
 	"contact": {
 		"homepage": "",
@@ -16,16 +16,22 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"turniplabs.examplemod.ExampleMod"
+			"fcaz.wolfblock.Main"
 		],
 		"beforeGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"fcaz.wolfblock.Main"
 		],
 		"afterGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"fcaz.wolfblock.Main"
 		],
-		"recipesReady": [
-			"turniplabs.examplemod.ExampleMod"
+		"initModels": [
+			"fcaz.wolfblock.WolfBlockModel"
+		],
+		"initNamespaces": [
+			"fcaz.wolfblock.Main"
+		],
+		"onRecipesReady": [
+			"fcaz.wolfblock.Main"
 		]
 	},
 	"mixins": [
