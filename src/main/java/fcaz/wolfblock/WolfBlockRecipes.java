@@ -21,7 +21,7 @@ public class WolfBlockRecipes extends RecipeRegistry {
 			.addInput('S', Items.STRING)
 			.addInput('P', Items.FOOD_PORKCHOP_RAW)
 			.addInput('D', Items.DUST_REDSTONE)
-			.create("wolfblockwild", new ItemStack(wolfBlockWild, 1));
+			.create("wolfblock.wild", new ItemStack(wolfBlockWild, 1));
 
 	}
 
