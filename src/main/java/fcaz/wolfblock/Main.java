@@ -67,6 +67,6 @@ public class Main implements ModInitializer, GameStartEntrypoint, RecipeEntrypoi
 
 	@Override
 	public void initNamespaces() {
-		WolfBlockRecipes.InitNameSpace();
+		WolfBlockRecipes.InitNameSpace(MOD_ID);
 	}
 }
