@@ -62,7 +62,7 @@ public class Main implements ModInitializer, GameStartEntrypoint, RecipeEntrypoi
 
 	@Override
 	public void onRecipesReady() {
-		WolfBlockRecipes .InitRecipes();
+		WolfBlockRecipes.InitRecipes();
 	}
 
 	@Override
