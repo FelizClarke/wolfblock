@@ -1,5 +1,6 @@
 package fcaz.wolfblock;
 
+import fcaz.wolfblock.Blocks.BlockBuilder.WolfBlocks;
 import net.minecraft.core.block.Blocks;
 import net.minecraft.core.data.registry.Registries;
 import net.minecraft.core.data.registry.recipe.RecipeGroup;
@@ -12,7 +13,6 @@ import net.minecraft.core.item.Items;
 import turniplabs.halplibe.helper.RecipeBuilder;
 
 import static fcaz.wolfblock.Main.MOD_ID;
-import static fcaz.wolfblock.Main.wolfBlockWild;
 
 public class WolfBlockRecipes extends RecipeRegistry {
 
@@ -21,7 +21,7 @@ public class WolfBlockRecipes extends RecipeRegistry {
 			.addInput('S', Items.STRING)
 			.addInput('P', Items.FOOD_PORKCHOP_RAW)
 			.addInput('D', Items.DUST_REDSTONE)
-			.create("wolfblock.wild", new ItemStack(wolfBlockWild, 1));
+			.create("wolfblock.wild", new ItemStack(WolfBlocks.wolfBlockWild, 1));
 
 	}
 

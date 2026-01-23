@@ -30,7 +30,7 @@
 		"initNamespaces": [
 			"fcaz.wolfblock.Main"
 		],
-		"onRecipesReady": [
+		"recipesReady": [
 			"fcaz.wolfblock.Main"
 		]
 	},
