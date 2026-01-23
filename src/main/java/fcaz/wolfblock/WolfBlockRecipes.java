@@ -22,7 +22,30 @@ public class WolfBlockRecipes extends RecipeRegistry {
 			.addInput('P', Items.FOOD_PORKCHOP_RAW)
 			.addInput('D', Items.DUST_REDSTONE)
 			.create("wolfblock.wild", new ItemStack(WolfBlocks.wolfBlockWild, 1));
-
+		RecipeBuilder.Shaped(MOD_ID, "C", "W")
+			.addInput('C', Items.CLOTH)
+			.addInput('W', WolfBlocks.wolfBlockWild)
+			.create("wolfblock.tame", new ItemStack(WolfBlocks.wolfBlockTame, 1));
+		RecipeBuilder.Shaped(MOD_ID, "F", "W")
+			.addInput('F', Items.TOOL_FIRESTRIKER_IRON)
+			.addInput('W', WolfBlocks.wolfBlockWild)
+			.create("wolfblock.angry", new ItemStack(WolfBlocks.wolfBlockAngry, 1));
+		RecipeBuilder.Shaped(MOD_ID, "F", "W")
+			.addInput('F', Items.TOOL_FIRESTRIKER_STEEL)
+			.addInput('W', WolfBlocks.wolfBlockWild)
+			.create("wolfblock.angry", new ItemStack(WolfBlocks.wolfBlockAngry, 1));
+		RecipeBuilder.Shaped(MOD_ID, "F", "W")
+			.addInput('F', Items.TOOL_FIRESTRIKER_IRON)
+			.addInput('W', WolfBlocks.wolfBlockTame)
+			.create("wolfblock.angry", new ItemStack(WolfBlocks.wolfBlockAngry, 1));
+		RecipeBuilder.Shaped(MOD_ID, "F", "W")
+			.addInput('F', Items.TOOL_FIRESTRIKER_STEEL)
+			.addInput('W', WolfBlocks.wolfBlockTame)
+			.create("wolfblock.angry", new ItemStack(WolfBlocks.wolfBlockAngry, 1));
+		RecipeBuilder.Shaped(MOD_ID, "B", "W")
+			.addInput('B', Items.BUCKET_WATER)
+			.addInput('W', WolfBlocks.wolfBlockAngry)
+			.create("wolfblock.wild", new ItemStack(WolfBlocks.wolfBlockWild, 1));
 	}
 
 	public static void InitNameSpace(String modId) {
@@ -38,5 +61,7 @@ public class WolfBlockRecipes extends RecipeRegistry {
 		WOLFBLOCK.register("workbench", WORKBENCH);
 
 		Registries.RECIPES.register("tile.wolfblock.wolfblock.wild", WOLFBLOCK);
+		Registries.RECIPES.register("tile.wolfblock.wolfblock.tame", WOLFBLOCK);
+		Registries.RECIPES.register("tile.wolfblock.wolfblock.angry", WOLFBLOCK);
 	}
 }
